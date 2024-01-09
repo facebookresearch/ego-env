@@ -1,0 +1,27 @@
+BASE_TASK_CONFIG_PATH: "walkthrough_generation/config/base.yaml"
+TRAINER_NAME: "ddppo"
+ENV_NAME: "ExpRLEnv"
+SIMULATOR_GPU_ID: 0
+TORCH_GPU_ID: 0
+VIDEO_OPTION: []
+VIDEO_DIR: "/checkpoint/tusharn/tmp/walkthrough/"
+TEST_EPISODE_COUNT: -1
+EVAL_CKPT_PATH_DIR: ""
+NUM_PROCESSES: 1
+SENSORS: ["RGB_SENSOR", "DEPTH_SENSOR"]
+CHECKPOINT_FOLDER: ""
+LOG_FILE: "/checkpoint/tusharn/tmp/walkthrough/generation_logs.txt"
+EVAL:
+  SPLIT: 'train_walkthrough'
+  USE_CKPT_CONFIG: False
+RL:
+  REWARD_MEASURES: ["cells_covered"]
+  REWARD_SCALES: [1.0]
+  SLACK_REWARD: 0.0
+  POLICY:
+    name: "PointNavRoombaPolicy"
+TASK_CONFIG:
+  TASK:
+    TYPE: OracleExp-v0
+SIMULATOR:
+  TURN_ANGLE: 30

@@ -1,0 +1,7 @@
+DATA:
+  TASK: PoseEmbedding
+  OBS_MASK_PROB: 0.2
+  QUERIES_PER_BATCH: 1
+
+MODEL:
+  NAME: PoseEmbedding

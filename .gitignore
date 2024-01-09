@@ -1,0 +1,10 @@
+*.pth
+*.zip
+
+__pycache__/
+data/datasets/
+data/scene_datasets/
+data/annotations/
+data/walkthrough_data/
+data/housetours/
+checkpoints/

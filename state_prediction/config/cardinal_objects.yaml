@@ -1,0 +1,9 @@
+DATA:
+  TASK: CardinalObjectState
+  QUERIES_PER_BATCH: 64
+  MULTITASK_WT: 0.1
+
+MODEL:
+  NAME: EnvStatePredictor
+  POSE_FREEZE: True
+  MODEL.HEAD: ['DirClsHead', 'DirDistClfHead']
