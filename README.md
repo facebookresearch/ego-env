@@ -52,7 +52,7 @@ python generate_env_features.py \
     MODEL.WEIGHTS checkpoints/cardinal_object_state/lightning_logs/version_0/checkpoints/epoch=2279-val_loss=2.29E-01.ckpt
 ```
 
-This generates a `(T, 512)` tensor for features sampled at 1FPS. See parameters in `state_prediction/config/downstream.yaml`. The following sections have instructions for generating simulated training data and training models from scratch.
+This generates a `(T, 128)` tensor for features sampled at 1FPS. See parameters in `state_prediction/config/downstream.yaml`. The following sections have instructions for generating simulated training data and training models from scratch.
 
 ## Generate simulated walkthroughs 
 
